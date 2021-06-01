@@ -1,0 +1,8 @@
+prefix=/home/mfikih15/kkctbn_simulation/install
+
+Name: kucing
+Description: Description of kucing
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

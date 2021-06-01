@@ -1,0 +1,2 @@
+kucing
+-DCATKIN_DEVEL_PREFIX=/home/mfikih15/kkctbn_simulation/devel -DCMAKE_INSTALL_PREFIX=/home/mfikih15/kkctbn_simulation/install -G Unix Makefiles
