@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "kucing: 3 messages, 0 services")
+message(STATUS "kucing: 4 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ikucing:/home/mfikih15/kkctbn_simulation/src/kucing/msg;-Imavros_msgs:/opt/ros/melodic/share/mavros_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Igeographic_msgs:/opt/ros/melodic/share/geographic_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iuuid_msgs:/opt/ros/melodic/share/uuid_msgs/cmake/../msg")
 
@@ -27,6 +27,11 @@ add_custom_target(_kucing_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kucing" "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg" ""
 )
 
+get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" NAME_WE)
+add_custom_target(_kucing_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kucing" "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" ""
+)
+
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" NAME_WE)
 add_custom_target(_kucing_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kucing" "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" ""
@@ -46,6 +51,12 @@ _generate_msg_cpp(kucing
 )
 _generate_msg_cpp(kucing
   "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kucing
+)
+_generate_msg_cpp(kucing
+  "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kucing
@@ -75,6 +86,8 @@ get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/ms
 add_dependencies(kucing_generate_messages_cpp _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_cpp _kucing_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" NAME_WE)
+add_dependencies(kucing_generate_messages_cpp _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_cpp _kucing_generate_messages_check_deps_${_filename})
 
@@ -95,6 +108,12 @@ _generate_msg_eus(kucing
 )
 _generate_msg_eus(kucing
   "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kucing
+)
+_generate_msg_eus(kucing
+  "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kucing
@@ -124,6 +143,8 @@ get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/ms
 add_dependencies(kucing_generate_messages_eus _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_eus _kucing_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" NAME_WE)
+add_dependencies(kucing_generate_messages_eus _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_eus _kucing_generate_messages_check_deps_${_filename})
 
@@ -144,6 +165,12 @@ _generate_msg_lisp(kucing
 )
 _generate_msg_lisp(kucing
   "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kucing
+)
+_generate_msg_lisp(kucing
+  "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kucing
@@ -173,6 +200,8 @@ get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/ms
 add_dependencies(kucing_generate_messages_lisp _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_lisp _kucing_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" NAME_WE)
+add_dependencies(kucing_generate_messages_lisp _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_lisp _kucing_generate_messages_check_deps_${_filename})
 
@@ -193,6 +222,12 @@ _generate_msg_nodejs(kucing
 )
 _generate_msg_nodejs(kucing
   "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kucing
+)
+_generate_msg_nodejs(kucing
+  "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kucing
@@ -222,6 +257,8 @@ get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/ms
 add_dependencies(kucing_generate_messages_nodejs _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_nodejs _kucing_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" NAME_WE)
+add_dependencies(kucing_generate_messages_nodejs _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_nodejs _kucing_generate_messages_check_deps_${_filename})
 
@@ -242,6 +279,12 @@ _generate_msg_py(kucing
 )
 _generate_msg_py(kucing
   "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kucing
+)
+_generate_msg_py(kucing
+  "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kucing
@@ -270,6 +313,8 @@ add_dependencies(kucing_generate_messages kucing_generate_messages_py)
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_flag.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_py _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg" NAME_WE)
+add_dependencies(kucing_generate_messages_py _kucing_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_py _kucing_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg" NAME_WE)
 add_dependencies(kucing_generate_messages_py _kucing_generate_messages_check_deps_${_filename})

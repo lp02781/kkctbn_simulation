@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/mfikih15/kkctbn_simulation/devel/include/kucing/joystick_node.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/mfikih15/kkctbn_simulation/src/kucing/src/main/joystick_monitor.cpp
 ros/ros.h
 -

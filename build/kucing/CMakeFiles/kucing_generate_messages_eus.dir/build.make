@@ -55,6 +55,7 @@ include kucing/CMakeFiles/kucing_generate_messages_eus.dir/progress.make
 
 kucing/CMakeFiles/kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/motor_flag.l
 kucing/CMakeFiles/kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/joystick_node.l
+kucing/CMakeFiles/kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/motor_joystick.l
 kucing/CMakeFiles/kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/override_motor.l
 kucing/CMakeFiles/kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/manifest.l
 
@@ -69,18 +70,24 @@ kucing/CMakeFiles/kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from kucing/joystick_node.msg"
 	cd /home/mfikih15/kkctbn_simulation/build/kucing && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg -Ikucing:/home/mfikih15/kkctbn_simulation/src/kucing/msg -Imavros_msgs:/opt/ros/melodic/share/mavros_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeographic_msgs:/opt/ros/melodic/share/geographic_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iuuid_msgs:/opt/ros/melodic/share/uuid_msgs/cmake/../msg -p kucing -o /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg
 
+/home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/motor_joystick.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/motor_joystick.l: /home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from kucing/motor_joystick.msg"
+	cd /home/mfikih15/kkctbn_simulation/build/kucing && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg -Ikucing:/home/mfikih15/kkctbn_simulation/src/kucing/msg -Imavros_msgs:/opt/ros/melodic/share/mavros_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeographic_msgs:/opt/ros/melodic/share/geographic_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iuuid_msgs:/opt/ros/melodic/share/uuid_msgs/cmake/../msg -p kucing -o /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg
+
 /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/override_motor.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/override_motor.l: /home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from kucing/override_motor.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from kucing/override_motor.msg"
 	cd /home/mfikih15/kkctbn_simulation/build/kucing && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg -Ikucing:/home/mfikih15/kkctbn_simulation/src/kucing/msg -Imavros_msgs:/opt/ros/melodic/share/mavros_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeographic_msgs:/opt/ros/melodic/share/geographic_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iuuid_msgs:/opt/ros/melodic/share/uuid_msgs/cmake/../msg -p kucing -o /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg
 
 /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for kucing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for kucing"
 	cd /home/mfikih15/kkctbn_simulation/build/kucing && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing kucing mavros_msgs std_msgs sensor_msgs
 
 kucing_generate_messages_eus: kucing/CMakeFiles/kucing_generate_messages_eus
 kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/motor_flag.l
 kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/joystick_node.l
+kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/motor_joystick.l
 kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/msg/override_motor.l
 kucing_generate_messages_eus: /home/mfikih15/kkctbn_simulation/devel/share/roseus/ros/kucing/manifest.l
 kucing_generate_messages_eus: kucing/CMakeFiles/kucing_generate_messages_eus.dir/build.make

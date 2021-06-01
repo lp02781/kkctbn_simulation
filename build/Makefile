@@ -298,6 +298,19 @@ image_front/fast:
 .PHONY : image_front/fast
 
 #=============================================================================
+# Target rules for targets named node_master
+
+# Build rule for target.
+node_master: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_master
+.PHONY : node_master
+
+# fast build rule for target.
+node_master/fast:
+	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/build
+.PHONY : node_master/fast
+
+#=============================================================================
 # Target rules for targets named joystick_monitor
 
 # Build rule for target.
@@ -413,6 +426,19 @@ kucing_generate_messages: cmake_check_build_system
 kucing_generate_messages/fast:
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages.dir/build.make kucing/CMakeFiles/kucing_generate_messages.dir/build
 .PHONY : kucing_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named motor_controller
+
+# Build rule for target.
+motor_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_controller
+.PHONY : motor_controller
+
+# fast build rule for target.
+motor_controller/fast:
+	$(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/build
+.PHONY : motor_controller/fast
 
 #=============================================================================
 # Target rules for targets named uuid_msgs_generate_messages_nodejs
@@ -673,6 +699,19 @@ std_msgs_generate_messages_py: cmake_check_build_system
 std_msgs_generate_messages_py/fast:
 	$(MAKE) -f kucing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kucing/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _kucing_generate_messages_check_deps_motor_joystick
+
+# Build rule for target.
+_kucing_generate_messages_check_deps_motor_joystick: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _kucing_generate_messages_check_deps_motor_joystick
+.PHONY : _kucing_generate_messages_check_deps_motor_joystick
+
+# fast build rule for target.
+_kucing_generate_messages_check_deps_motor_joystick/fast:
+	$(MAKE) -f kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build.make kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build
+.PHONY : _kucing_generate_messages_check_deps_motor_joystick/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_lisp
@@ -1035,6 +1074,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... image_front"
+	@echo "... node_master"
 	@echo "... joystick_monitor"
 	@echo "... kucing_genpy"
 	@echo "... kucing_generate_messages_py"
@@ -1044,6 +1084,7 @@ help:
 	@echo "... kucing_generate_messages_nodejs"
 	@echo "... kucing_gencpp"
 	@echo "... kucing_generate_messages"
+	@echo "... motor_controller"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
@@ -1064,6 +1105,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... _kucing_generate_messages_check_deps_motor_joystick"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_py"

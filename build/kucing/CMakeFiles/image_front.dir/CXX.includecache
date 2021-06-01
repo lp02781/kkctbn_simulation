@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/mfikih15/kkctbn_simulation/src/kucing/include/kucing/hehe.hpp
+ros/ros.h
+/home/mfikih15/kkctbn_simulation/src/kucing/include/kucing/ros/ros.h
 iostream
 -
 stdio.h

@@ -58,6 +58,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x")
    override_motor.msg
    motor_flag.msg
    joystick_node.msg
+   motor_joystick.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -164,6 +165,16 @@ include_directories(
 #############
 ## Install ##
 #############
+
+add_executable(node_master src/main/node_master.cpp )
+target_link_libraries(node_master
+${catkin_LIBRARIES}
+)
+
+add_executable(motor_controller src/controller/motor_controller.cpp )
+target_link_libraries(motor_controller
+${catkin_LIBRARIES}
+)
 
 add_executable(joystick_monitor src/main/joystick_monitor.cpp )
 target_link_libraries(joystick_monitor

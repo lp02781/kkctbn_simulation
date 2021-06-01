@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg;/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_flag.msg;/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+messages_str = "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg;/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_flag.msg;/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg;/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
 services_str = ""
 pkg_name = "kucing"
 dependencies_str = "mavros_msgs;std_msgs;sensor_msgs"

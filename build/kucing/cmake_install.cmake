@@ -42,6 +42,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/mfikih15/kkctbn_simulation/src/kucing/msg/override_motor.msg"
     "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_flag.msg"
     "/home/mfikih15/kkctbn_simulation/src/kucing/msg/joystick_node.msg"
+    "/home/mfikih15/kkctbn_simulation/src/kucing/msg/motor_joystick.msg"
     )
 endif()
 

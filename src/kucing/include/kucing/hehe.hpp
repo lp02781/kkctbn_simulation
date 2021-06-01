@@ -15,3 +15,6 @@ int number_camera = 0;
 
 #define MAX_STEERING 1900
 #define MIN_STEERING 1100
+
+#define STEERING 0
+#define THROTTLE 2

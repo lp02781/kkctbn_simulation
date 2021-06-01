@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/mfikih15/kkctbn_simulation/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,6 +88,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -181,6 +181,21 @@ image_front: kucing/CMakeFiles/image_front.dir/rule
 image_front/fast:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/build
 .PHONY : image_front/fast
+
+# Convenience name for target.
+kucing/CMakeFiles/node_master.dir/rule:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/node_master.dir/rule
+.PHONY : kucing/CMakeFiles/node_master.dir/rule
+
+# Convenience name for target.
+node_master: kucing/CMakeFiles/node_master.dir/rule
+
+.PHONY : node_master
+
+# fast build rule for target.
+node_master/fast:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/build
+.PHONY : node_master/fast
 
 # Convenience name for target.
 kucing/CMakeFiles/joystick_monitor.dir/rule:
@@ -316,6 +331,21 @@ kucing_generate_messages: kucing/CMakeFiles/kucing_generate_messages.dir/rule
 kucing_generate_messages/fast:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/kucing_generate_messages.dir/build.make kucing/CMakeFiles/kucing_generate_messages.dir/build
 .PHONY : kucing_generate_messages/fast
+
+# Convenience name for target.
+kucing/CMakeFiles/motor_controller.dir/rule:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/motor_controller.dir/rule
+.PHONY : kucing/CMakeFiles/motor_controller.dir/rule
+
+# Convenience name for target.
+motor_controller: kucing/CMakeFiles/motor_controller.dir/rule
+
+.PHONY : motor_controller
+
+# fast build rule for target.
+motor_controller/fast:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/build
+.PHONY : motor_controller/fast
 
 # Convenience name for target.
 kucing/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
@@ -616,6 +646,21 @@ std_msgs_generate_messages_py: kucing/CMakeFiles/std_msgs_generate_messages_py.d
 std_msgs_generate_messages_py/fast:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kucing/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
+.PHONY : kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
+
+# Convenience name for target.
+_kucing_generate_messages_check_deps_motor_joystick: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
+
+.PHONY : _kucing_generate_messages_check_deps_motor_joystick
+
+# fast build rule for target.
+_kucing_generate_messages_check_deps_motor_joystick/fast:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build.make kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build
+.PHONY : _kucing_generate_messages_check_deps_motor_joystick/fast
 
 # Convenience name for target.
 kucing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
@@ -1007,6 +1052,33 @@ geographic_msgs_generate_messages_eus/fast:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make kucing/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
 .PHONY : geographic_msgs_generate_messages_eus/fast
 
+src/controller/motor_controller.o: src/controller/motor_controller.cpp.o
+
+.PHONY : src/controller/motor_controller.o
+
+# target to build an object file
+src/controller/motor_controller.cpp.o:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/src/controller/motor_controller.cpp.o
+.PHONY : src/controller/motor_controller.cpp.o
+
+src/controller/motor_controller.i: src/controller/motor_controller.cpp.i
+
+.PHONY : src/controller/motor_controller.i
+
+# target to preprocess a source file
+src/controller/motor_controller.cpp.i:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/src/controller/motor_controller.cpp.i
+.PHONY : src/controller/motor_controller.cpp.i
+
+src/controller/motor_controller.s: src/controller/motor_controller.cpp.s
+
+.PHONY : src/controller/motor_controller.s
+
+# target to generate assembly for a file
+src/controller/motor_controller.cpp.s:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/src/controller/motor_controller.cpp.s
+.PHONY : src/controller/motor_controller.cpp.s
+
 src/image/image_front.o: src/image/image_front.cpp.o
 
 .PHONY : src/image/image_front.o
@@ -1061,17 +1133,45 @@ src/main/joystick_monitor.cpp.s:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/joystick_monitor.dir/build.make kucing/CMakeFiles/joystick_monitor.dir/src/main/joystick_monitor.cpp.s
 .PHONY : src/main/joystick_monitor.cpp.s
 
+src/main/node_master.o: src/main/node_master.cpp.o
+
+.PHONY : src/main/node_master.o
+
+# target to build an object file
+src/main/node_master.cpp.o:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/src/main/node_master.cpp.o
+.PHONY : src/main/node_master.cpp.o
+
+src/main/node_master.i: src/main/node_master.cpp.i
+
+.PHONY : src/main/node_master.i
+
+# target to preprocess a source file
+src/main/node_master.cpp.i:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/src/main/node_master.cpp.i
+.PHONY : src/main/node_master.cpp.i
+
+src/main/node_master.s: src/main/node_master.cpp.s
+
+.PHONY : src/main/node_master.s
+
+# target to generate assembly for a file
+src/main/node_master.cpp.s:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/src/main/node_master.cpp.s
+.PHONY : src/main/node_master.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... image_front"
+	@echo "... install/strip"
+	@echo "... node_master"
 	@echo "... joystick_monitor"
 	@echo "... kucing_genpy"
 	@echo "... kucing_generate_messages_py"
@@ -1081,6 +1181,7 @@ help:
 	@echo "... kucing_generate_messages_nodejs"
 	@echo "... kucing_gencpp"
 	@echo "... kucing_generate_messages"
+	@echo "... motor_controller"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
@@ -1102,6 +1203,7 @@ help:
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... install/local"
+	@echo "... _kucing_generate_messages_check_deps_motor_joystick"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_py"
@@ -1130,12 +1232,18 @@ help:
 	@echo "... test"
 	@echo "... geographic_msgs_generate_messages_nodejs"
 	@echo "... geographic_msgs_generate_messages_eus"
+	@echo "... src/controller/motor_controller.o"
+	@echo "... src/controller/motor_controller.i"
+	@echo "... src/controller/motor_controller.s"
 	@echo "... src/image/image_front.o"
 	@echo "... src/image/image_front.i"
 	@echo "... src/image/image_front.s"
 	@echo "... src/main/joystick_monitor.o"
 	@echo "... src/main/joystick_monitor.i"
 	@echo "... src/main/joystick_monitor.s"
+	@echo "... src/main/node_master.o"
+	@echo "... src/main/node_master.i"
+	@echo "... src/main/node_master.s"
 .PHONY : help
 
 

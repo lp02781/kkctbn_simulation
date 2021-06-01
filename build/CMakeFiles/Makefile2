@@ -409,13 +409,16 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 # Convenience name for "all" pass in the directory.
 kucing/all: kucing/CMakeFiles/image_front.dir/all
+kucing/all: kucing/CMakeFiles/node_master.dir/all
 kucing/all: kucing/CMakeFiles/joystick_monitor.dir/all
 kucing/all: kucing/CMakeFiles/kucing_generate_messages.dir/all
+kucing/all: kucing/CMakeFiles/motor_controller.dir/all
 
 .PHONY : kucing/all
 
 # Convenience name for "clean" pass in the directory.
 kucing/clean: kucing/CMakeFiles/image_front.dir/clean
+kucing/clean: kucing/CMakeFiles/node_master.dir/clean
 kucing/clean: kucing/CMakeFiles/joystick_monitor.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_genpy.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_generate_messages_py.dir/clean
@@ -425,6 +428,7 @@ kucing/clean: kucing/CMakeFiles/kucing_generate_messages_eus.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_gencpp.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_generate_messages.dir/clean
+kucing/clean: kucing/CMakeFiles/motor_controller.dir/clean
 kucing/clean: kucing/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/clean
 kucing/clean: kucing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 kucing/clean: kucing/CMakeFiles/uuid_msgs_generate_messages_py.dir/clean
@@ -445,6 +449,7 @@ kucing/clean: kucing/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 kucing/clean: kucing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 kucing/clean: kucing/CMakeFiles/roscpp_generate_messages_py.dir/clean
 kucing/clean: kucing/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+kucing/clean: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/clean
 kucing/clean: kucing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 kucing/clean: kucing/CMakeFiles/uuid_msgs_generate_messages_eus.dir/clean
 kucing/clean: kucing/CMakeFiles/geographic_msgs_generate_messages_py.dir/clean
@@ -517,6 +522,43 @@ clean: kucing/CMakeFiles/image_front.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target kucing/CMakeFiles/node_master.dir
+
+# All Build rule for target.
+kucing/CMakeFiles/node_master.dir/all:
+	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/depend
+	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=40,41 "Built target node_master"
+.PHONY : kucing/CMakeFiles/node_master.dir/all
+
+# Include target in all.
+all: kucing/CMakeFiles/node_master.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+kucing/CMakeFiles/node_master.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/node_master.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
+.PHONY : kucing/CMakeFiles/node_master.dir/rule
+
+# Convenience name for target.
+node_master: kucing/CMakeFiles/node_master.dir/rule
+
+.PHONY : node_master
+
+# clean rule for target.
+kucing/CMakeFiles/node_master.dir/clean:
+	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/clean
+.PHONY : kucing/CMakeFiles/node_master.dir/clean
+
+# clean rule for target.
+clean: kucing/CMakeFiles/node_master.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target kucing/CMakeFiles/joystick_monitor.dir
 
 # All Build rule for target.
@@ -565,7 +607,7 @@ kucing/CMakeFiles/kucing_genpy.dir/all: kucing/CMakeFiles/kucing_generate_messag
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_genpy.dir/rule
@@ -591,18 +633,19 @@ clean: kucing/CMakeFiles/kucing_genpy.dir/clean
 # All Build rule for target.
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_joystick_node.dir/all
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/std_msgs_generate_messages_py.dir/all
+kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_override_motor.dir/all
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_py.dir/build.make kucing/CMakeFiles/kucing_generate_messages_py.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_py.dir/build.make kucing/CMakeFiles/kucing_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=29,30,31,32 "Built target kucing_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=33,34,35,36,37 "Built target kucing_generate_messages_py"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_py.dir/rule
@@ -634,7 +677,7 @@ kucing/CMakeFiles/kucing_genlisp.dir/all: kucing/CMakeFiles/kucing_generate_mess
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_genlisp.dir/rule
@@ -661,17 +704,18 @@ clean: kucing/CMakeFiles/kucing_genlisp.dir/clean
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/all
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_joystick_node.dir/all
+kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_override_motor.dir/all
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_lisp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_lisp.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_lisp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=23,24,25 "Built target kucing_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=25,26,27,28 "Built target kucing_generate_messages_lisp"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_lisp.dir/rule
@@ -698,17 +742,18 @@ clean: kucing/CMakeFiles/kucing_generate_messages_lisp.dir/clean
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_joystick_node.dir/all
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_override_motor.dir/all
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_eus.dir/build.make kucing/CMakeFiles/kucing_generate_messages_eus.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_eus.dir/build.make kucing/CMakeFiles/kucing_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=19,20,21,22 "Built target kucing_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=20,21,22,23,24 "Built target kucing_generate_messages_eus"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_eus.dir/rule
@@ -735,17 +780,18 @@ clean: kucing/CMakeFiles/kucing_generate_messages_eus.dir/clean
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_joystick_node.dir/all
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/all
+kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_override_motor.dir/all
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/build.make kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/build.make kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=26,27,28 "Built target kucing_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=29,30,31,32 "Built target kucing_generate_messages_nodejs"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/rule
@@ -777,7 +823,7 @@ kucing/CMakeFiles/kucing_gencpp.dir/all: kucing/CMakeFiles/kucing_generate_messa
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_gencpp.dir/rule
@@ -818,7 +864,7 @@ all: kucing/CMakeFiles/kucing_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_generate_messages.dir/rule
@@ -835,6 +881,43 @@ kucing/CMakeFiles/kucing_generate_messages.dir/clean:
 
 # clean rule for target.
 clean: kucing/CMakeFiles/kucing_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target kucing/CMakeFiles/motor_controller.dir
+
+# All Build rule for target.
+kucing/CMakeFiles/motor_controller.dir/all:
+	$(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/depend
+	$(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=38,39 "Built target motor_controller"
+.PHONY : kucing/CMakeFiles/motor_controller.dir/all
+
+# Include target in all.
+all: kucing/CMakeFiles/motor_controller.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+kucing/CMakeFiles/motor_controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/motor_controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
+.PHONY : kucing/CMakeFiles/motor_controller.dir/rule
+
+# Convenience name for target.
+motor_controller: kucing/CMakeFiles/motor_controller.dir/rule
+
+.PHONY : motor_controller
+
+# clean rule for target.
+kucing/CMakeFiles/motor_controller.dir/clean:
+	$(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/clean
+.PHONY : kucing/CMakeFiles/motor_controller.dir/clean
+
+# clean rule for target.
+clean: kucing/CMakeFiles/motor_controller.dir/clean
 
 .PHONY : clean
 
@@ -1234,7 +1317,7 @@ kucing/CMakeFiles/kucing_gennodejs.dir/all: kucing/CMakeFiles/kucing_generate_me
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_gennodejs.dir/rule
@@ -1475,6 +1558,38 @@ kucing/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: kucing/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir
+
+# All Build rule for target.
+kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all:
+	$(MAKE) -f kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build.make kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/depend
+	$(MAKE) -f kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build.make kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num= "Built target _kucing_generate_messages_check_deps_motor_joystick"
+.PHONY : kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
+
+# Build rule for subdir invocation for target.
+kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
+.PHONY : kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
+
+# Convenience name for target.
+_kucing_generate_messages_check_deps_motor_joystick: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
+
+.PHONY : _kucing_generate_messages_check_deps_motor_joystick
+
+# clean rule for target.
+kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/clean:
+	$(MAKE) -f kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build.make kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/clean
+.PHONY : kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/clean
+
+# clean rule for target.
+clean: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/clean
 
 .PHONY : clean
 
@@ -1746,7 +1861,7 @@ kucing/CMakeFiles/kucing_geneus.dir/all: kucing/CMakeFiles/kucing_generate_messa
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_geneus.dir/rule
@@ -1901,17 +2016,18 @@ clean: kucing/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_joystick_node.dir/all
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/all
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_override_motor.dir/all
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/all
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_cpp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_cpp.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_cpp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=16,17,18 "Built target kucing_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=16,17,18,19 "Built target kucing_generate_messages_cpp"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_cpp.dir/rule
