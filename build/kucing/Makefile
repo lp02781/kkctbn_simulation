@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/mfikih15/kkctbn_simulation/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -88,18 +100,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -168,34 +168,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-kucing/CMakeFiles/image_front.dir/rule:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/image_front.dir/rule
-.PHONY : kucing/CMakeFiles/image_front.dir/rule
+kucing/CMakeFiles/gazebo_front.dir/rule:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/gazebo_front.dir/rule
+.PHONY : kucing/CMakeFiles/gazebo_front.dir/rule
 
 # Convenience name for target.
-image_front: kucing/CMakeFiles/image_front.dir/rule
+gazebo_front: kucing/CMakeFiles/gazebo_front.dir/rule
 
-.PHONY : image_front
+.PHONY : gazebo_front
 
 # fast build rule for target.
-image_front/fast:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/build
-.PHONY : image_front/fast
+gazebo_front/fast:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/build
+.PHONY : gazebo_front/fast
 
 # Convenience name for target.
-kucing/CMakeFiles/node_master.dir/rule:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/node_master.dir/rule
-.PHONY : kucing/CMakeFiles/node_master.dir/rule
+kucing/CMakeFiles/gazebo_master.dir/rule:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/gazebo_master.dir/rule
+.PHONY : kucing/CMakeFiles/gazebo_master.dir/rule
 
 # Convenience name for target.
-node_master: kucing/CMakeFiles/node_master.dir/rule
+gazebo_master: kucing/CMakeFiles/gazebo_master.dir/rule
 
-.PHONY : node_master
+.PHONY : gazebo_master
 
 # fast build rule for target.
-node_master/fast:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/build
-.PHONY : node_master/fast
+gazebo_master/fast:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/build
+.PHONY : gazebo_master/fast
 
 # Convenience name for target.
 kucing/CMakeFiles/joystick_monitor.dir/rule:
@@ -1079,32 +1079,59 @@ src/controller/motor_controller.cpp.s:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/src/controller/motor_controller.cpp.s
 .PHONY : src/controller/motor_controller.cpp.s
 
-src/image/image_front.o: src/image/image_front.cpp.o
+src/image/gazebo_front.o: src/image/gazebo_front.cpp.o
 
-.PHONY : src/image/image_front.o
+.PHONY : src/image/gazebo_front.o
 
 # target to build an object file
-src/image/image_front.cpp.o:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/src/image/image_front.cpp.o
-.PHONY : src/image/image_front.cpp.o
+src/image/gazebo_front.cpp.o:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/src/image/gazebo_front.cpp.o
+.PHONY : src/image/gazebo_front.cpp.o
 
-src/image/image_front.i: src/image/image_front.cpp.i
+src/image/gazebo_front.i: src/image/gazebo_front.cpp.i
 
-.PHONY : src/image/image_front.i
+.PHONY : src/image/gazebo_front.i
 
 # target to preprocess a source file
-src/image/image_front.cpp.i:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/src/image/image_front.cpp.i
-.PHONY : src/image/image_front.cpp.i
+src/image/gazebo_front.cpp.i:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/src/image/gazebo_front.cpp.i
+.PHONY : src/image/gazebo_front.cpp.i
 
-src/image/image_front.s: src/image/image_front.cpp.s
+src/image/gazebo_front.s: src/image/gazebo_front.cpp.s
 
-.PHONY : src/image/image_front.s
+.PHONY : src/image/gazebo_front.s
 
 # target to generate assembly for a file
-src/image/image_front.cpp.s:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/src/image/image_front.cpp.s
-.PHONY : src/image/image_front.cpp.s
+src/image/gazebo_front.cpp.s:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/src/image/gazebo_front.cpp.s
+.PHONY : src/image/gazebo_front.cpp.s
+
+src/main/gazebo_master.o: src/main/gazebo_master.cpp.o
+
+.PHONY : src/main/gazebo_master.o
+
+# target to build an object file
+src/main/gazebo_master.cpp.o:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o
+.PHONY : src/main/gazebo_master.cpp.o
+
+src/main/gazebo_master.i: src/main/gazebo_master.cpp.i
+
+.PHONY : src/main/gazebo_master.i
+
+# target to preprocess a source file
+src/main/gazebo_master.cpp.i:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.i
+.PHONY : src/main/gazebo_master.cpp.i
+
+src/main/gazebo_master.s: src/main/gazebo_master.cpp.s
+
+.PHONY : src/main/gazebo_master.s
+
+# target to generate assembly for a file
+src/main/gazebo_master.cpp.s:
+	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.s
+.PHONY : src/main/gazebo_master.cpp.s
 
 src/main/joystick_monitor.o: src/main/joystick_monitor.cpp.o
 
@@ -1133,45 +1160,18 @@ src/main/joystick_monitor.cpp.s:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/joystick_monitor.dir/build.make kucing/CMakeFiles/joystick_monitor.dir/src/main/joystick_monitor.cpp.s
 .PHONY : src/main/joystick_monitor.cpp.s
 
-src/main/node_master.o: src/main/node_master.cpp.o
-
-.PHONY : src/main/node_master.o
-
-# target to build an object file
-src/main/node_master.cpp.o:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/src/main/node_master.cpp.o
-.PHONY : src/main/node_master.cpp.o
-
-src/main/node_master.i: src/main/node_master.cpp.i
-
-.PHONY : src/main/node_master.i
-
-# target to preprocess a source file
-src/main/node_master.cpp.i:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/src/main/node_master.cpp.i
-.PHONY : src/main/node_master.cpp.i
-
-src/main/node_master.s: src/main/node_master.cpp.s
-
-.PHONY : src/main/node_master.s
-
-# target to generate assembly for a file
-src/main/node_master.cpp.s:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/src/main/node_master.cpp.s
-.PHONY : src/main/node_master.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
-	@echo "... image_front"
-	@echo "... install/strip"
-	@echo "... node_master"
+	@echo "... gazebo_front"
+	@echo "... gazebo_master"
 	@echo "... joystick_monitor"
 	@echo "... kucing_genpy"
 	@echo "... kucing_generate_messages_py"
@@ -1235,15 +1235,15 @@ help:
 	@echo "... src/controller/motor_controller.o"
 	@echo "... src/controller/motor_controller.i"
 	@echo "... src/controller/motor_controller.s"
-	@echo "... src/image/image_front.o"
-	@echo "... src/image/image_front.i"
-	@echo "... src/image/image_front.s"
+	@echo "... src/image/gazebo_front.o"
+	@echo "... src/image/gazebo_front.i"
+	@echo "... src/image/gazebo_front.s"
+	@echo "... src/main/gazebo_master.o"
+	@echo "... src/main/gazebo_master.i"
+	@echo "... src/main/gazebo_master.s"
 	@echo "... src/main/joystick_monitor.o"
 	@echo "... src/main/joystick_monitor.i"
 	@echo "... src/main/joystick_monitor.s"
-	@echo "... src/main/node_master.o"
-	@echo "... src/main/node_master.i"
-	@echo "... src/main/node_master.s"
 .PHONY : help
 
 

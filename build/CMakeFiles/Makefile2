@@ -264,7 +264,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=4,5,6,7 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=8,9,10,11 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=1,2,3 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=5,6,7 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=10,11 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=8,9 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=12,13 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,8 +408,8 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory kucing
 
 # Convenience name for "all" pass in the directory.
-kucing/all: kucing/CMakeFiles/image_front.dir/all
-kucing/all: kucing/CMakeFiles/node_master.dir/all
+kucing/all: kucing/CMakeFiles/gazebo_front.dir/all
+kucing/all: kucing/CMakeFiles/gazebo_master.dir/all
 kucing/all: kucing/CMakeFiles/joystick_monitor.dir/all
 kucing/all: kucing/CMakeFiles/kucing_generate_messages.dir/all
 kucing/all: kucing/CMakeFiles/motor_controller.dir/all
@@ -417,8 +417,8 @@ kucing/all: kucing/CMakeFiles/motor_controller.dir/all
 .PHONY : kucing/all
 
 # Convenience name for "clean" pass in the directory.
-kucing/clean: kucing/CMakeFiles/image_front.dir/clean
-kucing/clean: kucing/CMakeFiles/node_master.dir/clean
+kucing/clean: kucing/CMakeFiles/gazebo_front.dir/clean
+kucing/clean: kucing/CMakeFiles/gazebo_master.dir/clean
 kucing/clean: kucing/CMakeFiles/joystick_monitor.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_genpy.dir/clean
 kucing/clean: kucing/CMakeFiles/kucing_generate_messages_py.dir/clean
@@ -485,76 +485,76 @@ kucing/preinstall:
 .PHONY : kucing/preinstall
 
 #=============================================================================
-# Target rules for target kucing/CMakeFiles/image_front.dir
+# Target rules for target kucing/CMakeFiles/gazebo_front.dir
 
 # All Build rule for target.
-kucing/CMakeFiles/image_front.dir/all:
-	$(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/depend
-	$(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=12,13 "Built target image_front"
-.PHONY : kucing/CMakeFiles/image_front.dir/all
+kucing/CMakeFiles/gazebo_front.dir/all:
+	$(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/depend
+	$(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=1,2 "Built target gazebo_front"
+.PHONY : kucing/CMakeFiles/gazebo_front.dir/all
 
 # Include target in all.
-all: kucing/CMakeFiles/image_front.dir/all
+all: kucing/CMakeFiles/gazebo_front.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-kucing/CMakeFiles/image_front.dir/rule: cmake_check_build_system
+kucing/CMakeFiles/gazebo_front.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/image_front.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/gazebo_front.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
-.PHONY : kucing/CMakeFiles/image_front.dir/rule
+.PHONY : kucing/CMakeFiles/gazebo_front.dir/rule
 
 # Convenience name for target.
-image_front: kucing/CMakeFiles/image_front.dir/rule
+gazebo_front: kucing/CMakeFiles/gazebo_front.dir/rule
 
-.PHONY : image_front
-
-# clean rule for target.
-kucing/CMakeFiles/image_front.dir/clean:
-	$(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/clean
-.PHONY : kucing/CMakeFiles/image_front.dir/clean
+.PHONY : gazebo_front
 
 # clean rule for target.
-clean: kucing/CMakeFiles/image_front.dir/clean
+kucing/CMakeFiles/gazebo_front.dir/clean:
+	$(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/clean
+.PHONY : kucing/CMakeFiles/gazebo_front.dir/clean
+
+# clean rule for target.
+clean: kucing/CMakeFiles/gazebo_front.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target kucing/CMakeFiles/node_master.dir
+# Target rules for target kucing/CMakeFiles/gazebo_master.dir
 
 # All Build rule for target.
-kucing/CMakeFiles/node_master.dir/all:
-	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/depend
-	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=40,41 "Built target node_master"
-.PHONY : kucing/CMakeFiles/node_master.dir/all
+kucing/CMakeFiles/gazebo_master.dir/all:
+	$(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/depend
+	$(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=3,4 "Built target gazebo_master"
+.PHONY : kucing/CMakeFiles/gazebo_master.dir/all
 
 # Include target in all.
-all: kucing/CMakeFiles/node_master.dir/all
+all: kucing/CMakeFiles/gazebo_master.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-kucing/CMakeFiles/node_master.dir/rule: cmake_check_build_system
+kucing/CMakeFiles/gazebo_master.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/node_master.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/gazebo_master.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mfikih15/kkctbn_simulation/build/CMakeFiles 0
-.PHONY : kucing/CMakeFiles/node_master.dir/rule
+.PHONY : kucing/CMakeFiles/gazebo_master.dir/rule
 
 # Convenience name for target.
-node_master: kucing/CMakeFiles/node_master.dir/rule
+gazebo_master: kucing/CMakeFiles/gazebo_master.dir/rule
 
-.PHONY : node_master
-
-# clean rule for target.
-kucing/CMakeFiles/node_master.dir/clean:
-	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/clean
-.PHONY : kucing/CMakeFiles/node_master.dir/clean
+.PHONY : gazebo_master
 
 # clean rule for target.
-clean: kucing/CMakeFiles/node_master.dir/clean
+kucing/CMakeFiles/gazebo_master.dir/clean:
+	$(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/clean
+.PHONY : kucing/CMakeFiles/gazebo_master.dir/clean
+
+# clean rule for target.
+clean: kucing/CMakeFiles/gazebo_master.dir/clean
 
 .PHONY : clean
 
@@ -565,7 +565,7 @@ clean: kucing/CMakeFiles/node_master.dir/clean
 kucing/CMakeFiles/joystick_monitor.dir/all:
 	$(MAKE) -f kucing/CMakeFiles/joystick_monitor.dir/build.make kucing/CMakeFiles/joystick_monitor.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/joystick_monitor.dir/build.make kucing/CMakeFiles/joystick_monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=14,15 "Built target joystick_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=16,17 "Built target joystick_monitor"
 .PHONY : kucing/CMakeFiles/joystick_monitor.dir/all
 
 # Include target in all.
@@ -640,7 +640,7 @@ kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/_kucing
 kucing/CMakeFiles/kucing_generate_messages_py.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_py.dir/build.make kucing/CMakeFiles/kucing_generate_messages_py.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_py.dir/build.make kucing/CMakeFiles/kucing_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=33,34,35,36,37 "Built target kucing_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=35,36,37,38,39 "Built target kucing_generate_messages_py"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -710,7 +710,7 @@ kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/_kuci
 kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_lisp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_lisp.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_lisp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=25,26,27,28 "Built target kucing_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=27,28,29,30 "Built target kucing_generate_messages_lisp"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -748,7 +748,7 @@ kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/_kucin
 kucing/CMakeFiles/kucing_generate_messages_eus.dir/all: kucing/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_eus.dir/build.make kucing/CMakeFiles/kucing_generate_messages_eus.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_eus.dir/build.make kucing/CMakeFiles/kucing_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=20,21,22,23,24 "Built target kucing_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=22,23,24,25,26 "Built target kucing_generate_messages_eus"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -786,7 +786,7 @@ kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/sen
 kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/build.make kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/build.make kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=29,30,31,32 "Built target kucing_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=31,32,33,34 "Built target kucing_generate_messages_nodejs"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -891,7 +891,7 @@ clean: kucing/CMakeFiles/kucing_generate_messages.dir/clean
 kucing/CMakeFiles/motor_controller.dir/all:
 	$(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=38,39 "Built target motor_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=40,41 "Built target motor_controller"
 .PHONY : kucing/CMakeFiles/motor_controller.dir/all
 
 # Include target in all.
@@ -2022,7 +2022,7 @@ kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/mavros
 kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_flag.dir/all
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_cpp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_cpp.dir/depend
 	$(MAKE) -f kucing/CMakeFiles/kucing_generate_messages_cpp.dir/build.make kucing/CMakeFiles/kucing_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=16,17,18,19 "Built target kucing_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mfikih15/kkctbn_simulation/build/CMakeFiles --progress-num=18,19,20,21 "Built target kucing_generate_messages_cpp"
 .PHONY : kucing/CMakeFiles/kucing_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.

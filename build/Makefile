@@ -285,30 +285,30 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named image_front
+# Target rules for targets named gazebo_front
 
 # Build rule for target.
-image_front: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image_front
-.PHONY : image_front
+gazebo_front: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_front
+.PHONY : gazebo_front
 
 # fast build rule for target.
-image_front/fast:
-	$(MAKE) -f kucing/CMakeFiles/image_front.dir/build.make kucing/CMakeFiles/image_front.dir/build
-.PHONY : image_front/fast
+gazebo_front/fast:
+	$(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/build
+.PHONY : gazebo_front/fast
 
 #=============================================================================
-# Target rules for targets named node_master
+# Target rules for targets named gazebo_master
 
 # Build rule for target.
-node_master: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 node_master
-.PHONY : node_master
+gazebo_master: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_master
+.PHONY : gazebo_master
 
 # fast build rule for target.
-node_master/fast:
-	$(MAKE) -f kucing/CMakeFiles/node_master.dir/build.make kucing/CMakeFiles/node_master.dir/build
-.PHONY : node_master/fast
+gazebo_master/fast:
+	$(MAKE) -f kucing/CMakeFiles/gazebo_master.dir/build.make kucing/CMakeFiles/gazebo_master.dir/build
+.PHONY : gazebo_master/fast
 
 #=============================================================================
 # Target rules for targets named joystick_monitor
@@ -1073,8 +1073,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... image_front"
-	@echo "... node_master"
+	@echo "... gazebo_front"
+	@echo "... gazebo_master"
 	@echo "... joystick_monitor"
 	@echo "... kucing_genpy"
 	@echo "... kucing_generate_messages_py"

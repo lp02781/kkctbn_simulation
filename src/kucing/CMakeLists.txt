@@ -166,8 +166,8 @@ include_directories(
 ## Install ##
 #############
 
-add_executable(node_master src/main/node_master.cpp )
-target_link_libraries(node_master
+add_executable(gazebo_master src/main/gazebo_master.cpp )
+target_link_libraries(gazebo_master
 ${catkin_LIBRARIES}
 )
 
@@ -181,8 +181,8 @@ target_link_libraries(joystick_monitor
 ${catkin_LIBRARIES}
 )
 
-add_executable(image_front src/image/image_front.cpp )
-target_link_libraries(image_front
+add_executable(gazebo_front src/image/gazebo_front.cpp )
+target_link_libraries(gazebo_front
 ${catkin_LIBRARIES}
 ${OpenCV_LIBRARIES}
 )

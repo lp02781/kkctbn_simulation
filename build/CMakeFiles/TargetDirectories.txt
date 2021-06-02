@@ -35,12 +35,12 @@
 /home/mfikih15/kkctbn_simulation/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/mfikih15/kkctbn_simulation/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/mfikih15/kkctbn_simulation/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/install/strip.dir
 /home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/install.dir
 /home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/list_install_components.dir
 /home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/edit_cache.dir
-/home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/image_front.dir
-/home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/install/strip.dir
-/home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/node_master.dir
+/home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/gazebo_front.dir
+/home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/gazebo_master.dir
 /home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/joystick_monitor.dir
 /home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/kucing_genpy.dir
 /home/mfikih15/kkctbn_simulation/build/kucing/CMakeFiles/kucing_generate_messages_py.dir
