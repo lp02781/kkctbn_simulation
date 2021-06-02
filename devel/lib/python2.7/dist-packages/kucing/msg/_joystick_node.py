@@ -8,16 +8,16 @@ import struct
 
 
 class joystick_node(genpy.Message):
-  _md5sum = "59a9a1a36478e9f78bd496b9cfc96a4f"
+  _md5sum = "ad9674d7456ffdb9a269ad95daab1773"
   _type = "kucing/joystick_node"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """int16 left_analog
-int16 right_analog
+  _full_text = """float32 left_analog
+float32 right_analog
 int16 r1_button
 int16 r2_button
 """
   __slots__ = ['left_analog','right_analog','r1_button','r2_button']
-  _slot_types = ['int16','int16','int16','int16']
+  _slot_types = ['float32','float32','int16','int16']
 
   def __init__(self, *args, **kwds):
     """
@@ -37,16 +37,16 @@ int16 r2_button
       super(joystick_node, self).__init__(*args, **kwds)
       # message fields cannot be None, assign default values for those that are
       if self.left_analog is None:
-        self.left_analog = 0
+        self.left_analog = 0.
       if self.right_analog is None:
-        self.right_analog = 0
+        self.right_analog = 0.
       if self.r1_button is None:
         self.r1_button = 0
       if self.r2_button is None:
         self.r2_button = 0
     else:
-      self.left_analog = 0
-      self.right_analog = 0
+      self.left_analog = 0.
+      self.right_analog = 0.
       self.r1_button = 0
       self.r2_button = 0
 
@@ -63,7 +63,7 @@ int16 r2_button
     """
     try:
       _x = self
-      buff.write(_get_struct_4h().pack(_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button))
+      buff.write(_get_struct_2f2h().pack(_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -78,8 +78,8 @@ int16 r2_button
       end = 0
       _x = self
       start = end
-      end += 8
-      (_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button,) = _get_struct_4h().unpack(str[start:end])
+      end += 12
+      (_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button,) = _get_struct_2f2h().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -93,7 +93,7 @@ int16 r2_button
     """
     try:
       _x = self
-      buff.write(_get_struct_4h().pack(_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button))
+      buff.write(_get_struct_2f2h().pack(_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -109,8 +109,8 @@ int16 r2_button
       end = 0
       _x = self
       start = end
-      end += 8
-      (_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button,) = _get_struct_4h().unpack(str[start:end])
+      end += 12
+      (_x.left_analog, _x.right_analog, _x.r1_button, _x.r2_button,) = _get_struct_2f2h().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -119,9 +119,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_4h = None
-def _get_struct_4h():
-    global _struct_4h
-    if _struct_4h is None:
-        _struct_4h = struct.Struct("<4h")
-    return _struct_4h
+_struct_2f2h = None
+def _get_struct_2f2h():
+    global _struct_2f2h
+    if _struct_2f2h is None:
+        _struct_2f2h = struct.Struct("<2f2h")
+    return _struct_2f2h

@@ -1,0 +1,9 @@
+<launch>
+	<node name="motor_controller" pkg="kucing" output="screen" type="motor_controller"/>
+	<node name="gazebo_master" pkg="kucing" output="screen" type="gazebo_master"/>
+	<node name="joystick_monitor" pkg="kucing" output="screen" type="joystick_monitor"/>
+	<node respawn="true" pkg="joy" type="joy_node" name="turtle_joy" >
+		<param name="dev" type="string" value="/dev/input/js0" />
+		<param name="deadzone" value="0.12" />
+	</node>
+</launch>

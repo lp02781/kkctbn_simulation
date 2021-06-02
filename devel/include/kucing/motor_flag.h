@@ -24,12 +24,10 @@ struct motor_flag_
   typedef motor_flag_<ContainerAllocator> Type;
 
   motor_flag_()
-    : override_status(false)
-    , joystick_status(false)  {
+    : override_status(false)  {
     }
   motor_flag_(const ContainerAllocator& _alloc)
-    : override_status(false)
-    , joystick_status(false)  {
+    : override_status(false)  {
   (void)_alloc;
     }
 
@@ -37,9 +35,6 @@ struct motor_flag_
 
    typedef uint8_t _override_status_type;
   _override_status_type override_status;
-
-   typedef uint8_t _joystick_status_type;
-  _joystick_status_type joystick_status;
 
 
 
@@ -70,8 +65,7 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::kucing::motor_flag_<ContainerAllocator1> & lhs, const ::kucing::motor_flag_<ContainerAllocator2> & rhs)
 {
-  return lhs.override_status == rhs.override_status &&
-    lhs.joystick_status == rhs.joystick_status;
+  return lhs.override_status == rhs.override_status;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -128,12 +122,12 @@ struct MD5Sum< ::kucing::motor_flag_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "bfacfae75ff823d8fd718e2526da92db";
+    return "4dd85ad23193e9f5e96775d4f377d490";
   }
 
   static const char* value(const ::kucing::motor_flag_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xbfacfae75ff823d8ULL;
-  static const uint64_t static_value2 = 0xfd718e2526da92dbULL;
+  static const uint64_t static_value1 = 0x4dd85ad23193e9f5ULL;
+  static const uint64_t static_value2 = 0xe96775d4f377d490ULL;
 };
 
 template<class ContainerAllocator>
@@ -153,7 +147,6 @@ struct Definition< ::kucing::motor_flag_<ContainerAllocator> >
   static const char* value()
   {
     return "bool override_status\n"
-"bool joystick_status\n"
 ;
   }
 
@@ -173,7 +166,6 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.override_status);
-      stream.next(m.joystick_status);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -194,8 +186,6 @@ struct Printer< ::kucing::motor_flag_<ContainerAllocator> >
   {
     s << indent << "override_status: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.override_status);
-    s << indent << "joystick_status: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.joystick_status);
   }
 };
 

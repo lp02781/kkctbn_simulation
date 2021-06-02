@@ -24,14 +24,14 @@ struct joystick_node_
   typedef joystick_node_<ContainerAllocator> Type;
 
   joystick_node_()
-    : left_analog(0)
-    , right_analog(0)
+    : left_analog(0.0)
+    , right_analog(0.0)
     , r1_button(0)
     , r2_button(0)  {
     }
   joystick_node_(const ContainerAllocator& _alloc)
-    : left_analog(0)
-    , right_analog(0)
+    : left_analog(0.0)
+    , right_analog(0.0)
     , r1_button(0)
     , r2_button(0)  {
   (void)_alloc;
@@ -39,10 +39,10 @@ struct joystick_node_
 
 
 
-   typedef int16_t _left_analog_type;
+   typedef float _left_analog_type;
   _left_analog_type left_analog;
 
-   typedef int16_t _right_analog_type;
+   typedef float _right_analog_type;
   _right_analog_type right_analog;
 
    typedef int16_t _r1_button_type;
@@ -140,12 +140,12 @@ struct MD5Sum< ::kucing::joystick_node_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "59a9a1a36478e9f78bd496b9cfc96a4f";
+    return "ad9674d7456ffdb9a269ad95daab1773";
   }
 
   static const char* value(const ::kucing::joystick_node_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x59a9a1a36478e9f7ULL;
-  static const uint64_t static_value2 = 0x8bd496b9cfc96a4fULL;
+  static const uint64_t static_value1 = 0xad9674d7456ffdb9ULL;
+  static const uint64_t static_value2 = 0xa269ad95daab1773ULL;
 };
 
 template<class ContainerAllocator>
@@ -164,8 +164,8 @@ struct Definition< ::kucing::joystick_node_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int16 left_analog\n"
-"int16 right_analog\n"
+    return "float32 left_analog\n"
+"float32 right_analog\n"
 "int16 r1_button\n"
 "int16 r2_button\n"
 ;
@@ -209,9 +209,9 @@ struct Printer< ::kucing::joystick_node_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::kucing::joystick_node_<ContainerAllocator>& v)
   {
     s << indent << "left_analog: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.left_analog);
+    Printer<float>::stream(s, indent + "  ", v.left_analog);
     s << indent << "right_analog: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.right_analog);
+    Printer<float>::stream(s, indent + "  ", v.right_analog);
     s << indent << "r1_button: ";
     Printer<int16_t>::stream(s, indent + "  ", v.r1_button);
     s << indent << "r2_button: ";

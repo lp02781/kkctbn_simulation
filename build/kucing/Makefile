@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-kucing/CMakeFiles/gazebo_front.dir/rule:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/gazebo_front.dir/rule
-.PHONY : kucing/CMakeFiles/gazebo_front.dir/rule
-
-# Convenience name for target.
-gazebo_front: kucing/CMakeFiles/gazebo_front.dir/rule
-
-.PHONY : gazebo_front
-
-# fast build rule for target.
-gazebo_front/fast:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/build
-.PHONY : gazebo_front/fast
-
-# Convenience name for target.
 kucing/CMakeFiles/gazebo_master.dir/rule:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/gazebo_master.dir/rule
 .PHONY : kucing/CMakeFiles/gazebo_master.dir/rule
@@ -648,21 +633,6 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
-.PHONY : kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
-
-# Convenience name for target.
-_kucing_generate_messages_check_deps_motor_joystick: kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/rule
-
-.PHONY : _kucing_generate_messages_check_deps_motor_joystick
-
-# fast build rule for target.
-_kucing_generate_messages_check_deps_motor_joystick/fast:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build.make kucing/CMakeFiles/_kucing_generate_messages_check_deps_motor_joystick.dir/build
-.PHONY : _kucing_generate_messages_check_deps_motor_joystick/fast
-
-# Convenience name for target.
 kucing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 kucing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : kucing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
@@ -1079,33 +1049,6 @@ src/controller/motor_controller.cpp.s:
 	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/motor_controller.dir/build.make kucing/CMakeFiles/motor_controller.dir/src/controller/motor_controller.cpp.s
 .PHONY : src/controller/motor_controller.cpp.s
 
-src/image/gazebo_front.o: src/image/gazebo_front.cpp.o
-
-.PHONY : src/image/gazebo_front.o
-
-# target to build an object file
-src/image/gazebo_front.cpp.o:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/src/image/gazebo_front.cpp.o
-.PHONY : src/image/gazebo_front.cpp.o
-
-src/image/gazebo_front.i: src/image/gazebo_front.cpp.i
-
-.PHONY : src/image/gazebo_front.i
-
-# target to preprocess a source file
-src/image/gazebo_front.cpp.i:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/src/image/gazebo_front.cpp.i
-.PHONY : src/image/gazebo_front.cpp.i
-
-src/image/gazebo_front.s: src/image/gazebo_front.cpp.s
-
-.PHONY : src/image/gazebo_front.s
-
-# target to generate assembly for a file
-src/image/gazebo_front.cpp.s:
-	cd /home/mfikih15/kkctbn_simulation/build && $(MAKE) -f kucing/CMakeFiles/gazebo_front.dir/build.make kucing/CMakeFiles/gazebo_front.dir/src/image/gazebo_front.cpp.s
-.PHONY : src/image/gazebo_front.cpp.s
-
 src/main/gazebo_master.o: src/main/gazebo_master.cpp.o
 
 .PHONY : src/main/gazebo_master.o
@@ -1170,7 +1113,6 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
-	@echo "... gazebo_front"
 	@echo "... gazebo_master"
 	@echo "... joystick_monitor"
 	@echo "... kucing_genpy"
@@ -1203,7 +1145,6 @@ help:
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... install/local"
-	@echo "... _kucing_generate_messages_check_deps_motor_joystick"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_py"
@@ -1235,9 +1176,6 @@ help:
 	@echo "... src/controller/motor_controller.o"
 	@echo "... src/controller/motor_controller.i"
 	@echo "... src/controller/motor_controller.s"
-	@echo "... src/image/gazebo_front.o"
-	@echo "... src/image/gazebo_front.i"
-	@echo "... src/image/gazebo_front.s"
 	@echo "... src/main/gazebo_master.o"
 	@echo "... src/main/gazebo_master.i"
 	@echo "... src/main/gazebo_master.s"

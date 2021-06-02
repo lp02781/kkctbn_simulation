@@ -13,8 +13,8 @@ void checkController();
 void joyCallback(const sensor_msgs::Joy::ConstPtr& joy);
 
 int a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q;
-int left_analog;
-int right_analog;
+float left_analog;
+float right_analog;
 int r1_button;
 int r2_button;
 

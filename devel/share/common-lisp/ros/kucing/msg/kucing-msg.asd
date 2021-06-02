@@ -8,8 +8,6 @@
     (:file "_package_joystick_node" :depends-on ("_package"))
     (:file "motor_flag" :depends-on ("_package_motor_flag"))
     (:file "_package_motor_flag" :depends-on ("_package"))
-    (:file "motor_joystick" :depends-on ("_package_motor_joystick"))
-    (:file "_package_motor_joystick" :depends-on ("_package"))
     (:file "override_motor" :depends-on ("_package_override_motor"))
     (:file "_package_override_motor" :depends-on ("_package"))
   ))

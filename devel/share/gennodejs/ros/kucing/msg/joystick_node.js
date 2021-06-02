@@ -28,13 +28,13 @@ class joystick_node {
         this.left_analog = initObj.left_analog
       }
       else {
-        this.left_analog = 0;
+        this.left_analog = 0.0;
       }
       if (initObj.hasOwnProperty('right_analog')) {
         this.right_analog = initObj.right_analog
       }
       else {
-        this.right_analog = 0;
+        this.right_analog = 0.0;
       }
       if (initObj.hasOwnProperty('r1_button')) {
         this.r1_button = initObj.r1_button
@@ -54,9 +54,9 @@ class joystick_node {
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type joystick_node
     // Serialize message field [left_analog]
-    bufferOffset = _serializer.int16(obj.left_analog, buffer, bufferOffset);
+    bufferOffset = _serializer.float32(obj.left_analog, buffer, bufferOffset);
     // Serialize message field [right_analog]
-    bufferOffset = _serializer.int16(obj.right_analog, buffer, bufferOffset);
+    bufferOffset = _serializer.float32(obj.right_analog, buffer, bufferOffset);
     // Serialize message field [r1_button]
     bufferOffset = _serializer.int16(obj.r1_button, buffer, bufferOffset);
     // Serialize message field [r2_button]
@@ -69,9 +69,9 @@ class joystick_node {
     let len;
     let data = new joystick_node(null);
     // Deserialize message field [left_analog]
-    data.left_analog = _deserializer.int16(buffer, bufferOffset);
+    data.left_analog = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [right_analog]
-    data.right_analog = _deserializer.int16(buffer, bufferOffset);
+    data.right_analog = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [r1_button]
     data.r1_button = _deserializer.int16(buffer, bufferOffset);
     // Deserialize message field [r2_button]
@@ -80,7 +80,7 @@ class joystick_node {
   }
 
   static getMessageSize(object) {
-    return 8;
+    return 12;
   }
 
   static datatype() {
@@ -90,14 +90,14 @@ class joystick_node {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '59a9a1a36478e9f78bd496b9cfc96a4f';
+    return 'ad9674d7456ffdb9a269ad95daab1773';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    int16 left_analog
-    int16 right_analog
+    float32 left_analog
+    float32 right_analog
     int16 r1_button
     int16 r2_button
     
@@ -114,14 +114,14 @@ class joystick_node {
       resolved.left_analog = msg.left_analog;
     }
     else {
-      resolved.left_analog = 0
+      resolved.left_analog = 0.0
     }
 
     if (msg.right_analog !== undefined) {
       resolved.right_analog = msg.right_analog;
     }
     else {
-      resolved.right_analog = 0
+      resolved.right_analog = 0.0
     }
 
     if (msg.r1_button !== undefined) {

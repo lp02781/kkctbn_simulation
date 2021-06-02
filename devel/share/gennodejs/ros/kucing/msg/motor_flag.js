@@ -19,7 +19,6 @@ class motor_flag {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.override_status = null;
-      this.joystick_status = null;
     }
     else {
       if (initObj.hasOwnProperty('override_status')) {
@@ -28,12 +27,6 @@ class motor_flag {
       else {
         this.override_status = false;
       }
-      if (initObj.hasOwnProperty('joystick_status')) {
-        this.joystick_status = initObj.joystick_status
-      }
-      else {
-        this.joystick_status = false;
-      }
     }
   }
 
@@ -41,8 +34,6 @@ class motor_flag {
     // Serializes a message object of type motor_flag
     // Serialize message field [override_status]
     bufferOffset = _serializer.bool(obj.override_status, buffer, bufferOffset);
-    // Serialize message field [joystick_status]
-    bufferOffset = _serializer.bool(obj.joystick_status, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -52,13 +43,11 @@ class motor_flag {
     let data = new motor_flag(null);
     // Deserialize message field [override_status]
     data.override_status = _deserializer.bool(buffer, bufferOffset);
-    // Deserialize message field [joystick_status]
-    data.joystick_status = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 2;
+    return 1;
   }
 
   static datatype() {
@@ -68,14 +57,13 @@ class motor_flag {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'bfacfae75ff823d8fd718e2526da92db';
+    return '4dd85ad23193e9f5e96775d4f377d490';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
     bool override_status
-    bool joystick_status
     
     `;
   }
@@ -91,13 +79,6 @@ class motor_flag {
     }
     else {
       resolved.override_status = false
-    }
-
-    if (msg.joystick_status !== undefined) {
-      resolved.joystick_status = msg.joystick_status;
-    }
-    else {
-      resolved.joystick_status = false
     }
 
     return resolved;

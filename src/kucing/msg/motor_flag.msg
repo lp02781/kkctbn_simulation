@@ -1,2 +1,1 @@
 bool override_status
-bool joystick_status

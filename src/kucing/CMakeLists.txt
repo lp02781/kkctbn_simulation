@@ -58,7 +58,6 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x")
    override_motor.msg
    motor_flag.msg
    joystick_node.msg
-   motor_joystick.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -179,12 +178,6 @@ ${catkin_LIBRARIES}
 add_executable(joystick_monitor src/main/joystick_monitor.cpp )
 target_link_libraries(joystick_monitor
 ${catkin_LIBRARIES}
-)
-
-add_executable(gazebo_front src/image/gazebo_front.cpp )
-target_link_libraries(gazebo_front
-${catkin_LIBRARIES}
-${OpenCV_LIBRARIES}
 )
 
 # all install targets should use catkin DESTINATION variables

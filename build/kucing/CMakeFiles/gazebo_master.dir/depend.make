@@ -3,9 +3,12 @@
 
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /home/mfikih15/kkctbn_simulation/devel/include/kucing/joystick_node.h
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /home/mfikih15/kkctbn_simulation/devel/include/kucing/motor_flag.h
-kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /home/mfikih15/kkctbn_simulation/devel/include/kucing/motor_joystick.h
+kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /home/mfikih15/kkctbn_simulation/devel/include/kucing/override_motor.h
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /home/mfikih15/kkctbn_simulation/src/kucing/include/kucing/hehe.hpp
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /home/mfikih15/kkctbn_simulation/src/kucing/src/main/gazebo_master.cpp
+kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /opt/ros/melodic/include/mavros_msgs/CommandBool.h
+kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /opt/ros/melodic/include/mavros_msgs/CommandBoolRequest.h
+kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /opt/ros/melodic/include/mavros_msgs/CommandBoolResponse.h
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /opt/ros/melodic/include/mavros_msgs/SetMode.h
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /opt/ros/melodic/include/mavros_msgs/SetModeRequest.h
 kucing/CMakeFiles/gazebo_master.dir/src/main/gazebo_master.cpp.o: /opt/ros/melodic/include/mavros_msgs/SetModeResponse.h
